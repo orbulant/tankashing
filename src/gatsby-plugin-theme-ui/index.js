@@ -5,6 +5,14 @@ const theme = {
   styles: {
     ...future.styles,
   },
+  config: {
+    useLocalStorage: false,
+    initialColorModeName: 'dark',
+  },
+  colors: {
+    text: '#fff',
+    background: '#000',
+  }
 }
 
 export default theme

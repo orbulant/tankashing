@@ -1,8 +1,6 @@
 import React from "react"
-import { useState, useCallback } from "react"
-import { graphql } from "gatsby"
 import Layout from "../components/Layout"
-import { Container, Box, Divider, Button } from "theme-ui"
+import { Container, Box, Divider } from "theme-ui"
 import AnimatedText from "react-animated-text-content"
 
 const About = () => {
@@ -49,7 +47,8 @@ const About = () => {
             <Divider />
             <Box p={3}>
               <AnimatedText type="chars" animationType="bounce">
-                I'm ISTJ-A in the MBTI test and "The Skeptic - Cd" in the DISC test. If that matters to anyone :O
+                I'm ISTJ-A in the MBTI test and "The Skeptic - Cd" in the DISC
+                test. If that matters to anyone :O
               </AnimatedText>
             </Box>
           </Box>

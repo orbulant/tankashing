@@ -1,7 +1,9 @@
-import React from "react"
+import React, { Suspense } from "react"
 import Navbar from "./Navbar"
 import { graphql, useStaticQuery } from "gatsby"
-import { Flex, Box, Text} from "theme-ui"
+import { Flex, Box, Text } from "theme-ui"
+import { Canvas } from "react-three-fiber"
+import { Stars } from "@react-three/drei"
 
 const Layout = ({ children }) => {
   const querydata = useStaticQuery(graphql`
@@ -23,6 +25,19 @@ const Layout = ({ children }) => {
           flex: "1 1 auto",
         }}
       >
+        <Canvas style={{ position: "absolute" }}>
+          <Suspense fallback={"Loading..."}>
+            <Stars
+              radius={300}
+              depth={50}
+              count={20000}
+              factor={6}
+              saturation={0}
+              speed={1}
+              fade
+            />
+          </Suspense>
+        </Canvas>
         {children}
       </Box>
       <Box sx={{ alignSelf: "center" }}>

@@ -41,7 +41,7 @@ export default function Home({ data }) {
   return (
     <Layout>
       <Container p={4}>
-        <div style={{width: "100%", height: "30vh"}}>
+        <div style={{ width: "100%", height: "30vh" }}>
           <Canvas>
             <OrbitControls />
             <ambientLight intensity={0.6} />
@@ -52,7 +52,10 @@ export default function Home({ data }) {
             </Suspense>
           </Canvas>
         </div>
-        <Heading sx={{ fontSize: 32 }} style={{marginTop: 16, marginBottom: 16}}>
+        <Heading
+          sx={{ fontSize: 32 }}
+          style={{ marginTop: 16, marginBottom: 16 }}
+        >
           <Typewriter
             onInit={typewriter => {
               typewriter
