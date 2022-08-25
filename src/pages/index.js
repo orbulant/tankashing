@@ -40,8 +40,8 @@ export default function Home({ data }) {
   const homepage = data.markdownRemark
   return (
     <Layout>
-      <Container p={3}>
-        <Container>
+      <Container p={4}>
+        <div style={{width: "100%", height: "30vh"}}>
           <Canvas>
             <OrbitControls />
             <ambientLight intensity={0.6} />
@@ -51,28 +51,24 @@ export default function Home({ data }) {
               <Cube />
             </Suspense>
           </Canvas>
-        </Container>
-        <Container p={3}>
-          <Heading sx={{fontSize: 32}}>
-            <Typewriter
-              onInit={typewriter => {
-                typewriter
-                  .typeString("Tan Ka-Shing")
-                  .pauseFor(1500)
-                  .deleteAll()
-                  .typeString("Welcomes you :)")
-                  .start()
-              }}
-              options={{
-                loop: true,
-              }}
-            />
-          </Heading>
-          <Text sx={{fontSize: 22}}>{homepage.frontmatter.description}</Text>
-        </Container>
-        <Container p={4}>
-          <div dangerouslySetInnerHTML={{__html: homepage.html}} />
-        </Container>
+        </div>
+        <Heading sx={{ fontSize: 32 }} style={{marginTop: 16, marginBottom: 16}}>
+          <Typewriter
+            onInit={typewriter => {
+              typewriter
+                .typeString("Tan Ka-Shing")
+                .pauseFor(1500)
+                .deleteAll()
+                .typeString("Welcomes you :)")
+                .start()
+            }}
+            options={{
+              loop: true,
+            }}
+          />
+        </Heading>
+        <Text sx={{ fontSize: 22 }}>{homepage.frontmatter.description}</Text>
+        <div dangerouslySetInnerHTML={{ __html: homepage.html }} />
       </Container>
     </Layout>
   )
