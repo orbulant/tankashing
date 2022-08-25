@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
           flex: "1 1 auto",
         }}
       >
-        <Canvas style={{ position: "absolute" }}>
+        <Canvas style={{ position: "fixed", minHeight: "100%" }}>
           <Suspense fallback={"Loading..."}>
             <Stars
               radius={300}
