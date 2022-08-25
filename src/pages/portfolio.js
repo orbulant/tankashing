@@ -24,7 +24,7 @@ const portfolio = ({ data }) => {
               alignItems: "center",
             }}
           >
-            <div dangerouslySetInnerHTML={{ __html: portfolioContent }} />
+            <div dangerouslySetInnerHTML={{ __html: portfolioContent}} />
           </Box>
         </Container>
       </Box>
