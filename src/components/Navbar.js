@@ -16,7 +16,7 @@ const Navbar = () => {
     <Box
       bg="black"
       p={3}
-      sx={{ display: "flex", flexWrap: "wrap", alignItems: "center" }}
+      sx={{display: "flex", flexWrap: "wrap", alignItems: "center" }}
     >
       <Box sx={{ flexGrow: 1 }}>
         <Heading sx={{ color: "white" }}>

@@ -17,27 +17,33 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <Flex sx={{ flexDirection: "column", minHeight: "100vh" }}>
+    <Flex
+      sx={{
+        flexDirection: "column",
+        minHeight: "100vh",
+        zIndex: 1,
+      }}
+    >
       <Navbar />
+      <Canvas style={{ position: "absolute", minHeight: "100%", zIndex: -1 }}>
+        <Suspense fallback={"Loading... wait for Ka-Shing to wake up and generate this incessantly HAHA"}>
+          <Stars
+            radius={300}
+            depth={50}
+            count={20000}
+            factor={7}
+            saturation={2}
+            speed={1}
+            fade
+          />
+        </Suspense>
+      </Canvas>
       <Box
         sx={{
           width: "100%",
           flex: "1 1 auto",
         }}
       >
-        <Canvas style={{ position: "fixed", minHeight: "100%" }}>
-          <Suspense fallback={"Loading..."}>
-            <Stars
-              radius={300}
-              depth={50}
-              count={20000}
-              factor={6}
-              saturation={0}
-              speed={1}
-              fade
-            />
-          </Suspense>
-        </Canvas>
         {children}
       </Box>
       <Box sx={{ alignSelf: "center" }}>

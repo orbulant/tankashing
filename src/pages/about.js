@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { Container, Box, Divider } from "theme-ui"
+import { Container, Box, Divider, Text } from "theme-ui"
 import AnimatedText from "react-animated-text-content"
 
 const About = () => {
@@ -36,20 +36,20 @@ const About = () => {
               together okay? fellow software developers :)
             </AnimatedText>
             <Box p={4}>
-              <AnimatedText>
+              <Text>
                 Hello there! I'm currently working on several projects for
                 various different clients and i'm also working fulltime as a
                 Frontend Developer/FullStack Developer. I love what i do and i
                 really wanna be good at it so i try endless going out of my way
                 to learn new things.
-              </AnimatedText>
+              </Text>
             </Box>
             <Divider />
             <Box p={3}>
-              <AnimatedText type="chars" animationType="bounce">
+              <Text>
                 I'm ISTJ-A in the MBTI test and "The Skeptic - Cd" in the DISC
                 test. If that matters to anyone :O
-              </AnimatedText>
+              </Text>
             </Box>
           </Box>
         </Container>
