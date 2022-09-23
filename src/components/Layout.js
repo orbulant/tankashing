@@ -2,7 +2,7 @@ import React, { Suspense } from "react"
 import Navbar from "./Navbar"
 import { graphql, useStaticQuery } from "gatsby"
 import { Flex, Box, Text } from "theme-ui"
-import { Canvas } from "react-three-fiber"
+import { Canvas } from "@react-three/fiber"
 import { Stars } from "@react-three/drei"
 
 const Layout = ({ children }) => {
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
       }}
     >
       <Navbar />
-      <Canvas style={{ position: "absolute", minHeight: "100%", zIndex: -1 }}>
+      <Canvas style={{ position: "fixed", zIndex: -1}}>
         <Suspense fallback={"Loading... wait for Ka-Shing to wake up and generate this incessantly HAHA"}>
           <Stars
             radius={300}

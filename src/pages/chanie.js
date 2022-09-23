@@ -1,6 +1,6 @@
 import React, { useState, useRef, Suspense} from "react"
 import Layout from "../components/Layout"
-import { Canvas, useFrame } from "react-three-fiber"
+import { Canvas, useFrame } from "@react-three/fiber"
 import { OrbitControls, useTexture } from "@react-three/drei"
 import { Heading, Box, Button } from "theme-ui"
 

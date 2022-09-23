@@ -3,7 +3,7 @@ import React, { useState, useRef, Suspense } from "react"
 import { Container, Heading, Text } from "theme-ui"
 import Layout from "../components/Layout"
 import Typewriter from "typewriter-effect"
-import { Canvas, useFrame } from "react-three-fiber"
+import { Canvas, useFrame } from "@react-three/fiber"
 import { OrbitControls, useTexture } from "@react-three/drei"
 
 const MeshedUp = () => {
