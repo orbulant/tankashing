@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
       }}
     >
       <Navbar />
-      <Canvas style={{ position: "fixed", zIndex: -1}}>
+      <Canvas style={{ position: "fixed", zIndex: -1, height: "100%", top: 0, bottom: 0, left: 0, right: 0, overflowY: "hidden", WebkitOverflowScrolling: "touch"}}>
         <Suspense fallback={"Loading... wait for Ka-Shing to wake up and generate this incessantly HAHA"}>
           <Stars
             radius={300}
