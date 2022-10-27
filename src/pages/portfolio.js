@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
-import { Heading, Container, Box, Divider } from "theme-ui"
+import { Container, Box } from "theme-ui"
 
 const portfolio = ({ data }) => {
   const portfolioContent = data.markdownRemark.html
@@ -24,7 +24,7 @@ const portfolio = ({ data }) => {
               alignItems: "center",
             }}
           >
-            <div dangerouslySetInnerHTML={{ __html: portfolioContent}} />
+            <div dangerouslySetInnerHTML={{ __html: portfolioContent }} />
           </Box>
         </Container>
       </Box>

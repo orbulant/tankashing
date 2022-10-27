@@ -24,6 +24,8 @@
     "react": "^17.0.1",
     "react-animated-text-content": "^1.0.1",
     "react-dom": "^17.0.1",
+    "react-shepherd": "^4.1.0",
+    "shepherd.js": "^10.0.1",
     "theme-ui": "^0.13.1",
     "three": "^0.137.5",
     "typewriter-effect": "^2.18.2"
