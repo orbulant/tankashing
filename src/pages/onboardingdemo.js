@@ -109,7 +109,7 @@ const ButtonForTour = () => {
   )
 }
 
-const onboardingDemo = () => {
+const onboardingdemo = () => {
   return (
     <>
       <Navbar />
@@ -131,4 +131,4 @@ const onboardingDemo = () => {
   )
 }
 
-export default onboardingDemo
+export default onboardingdemo
