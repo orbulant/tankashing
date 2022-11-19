@@ -14,6 +14,10 @@ Tech Used: MongoDB, ExpressJS, ReactJS, NodeJS, Post Deployment Scripts, Git
 
 ---
 
-### UPCOMING PROJECTS.....
+# IYKYK E-Commerce Store (*Ongoing*)
 
-1. Product Landing Pages using Astro
+A **Next JS** based web store with Shopify integration as a fully sustaining E-Commerce Platform.
+
+Tech Used: NextJS, Vercel, Shopify
+
+[Click here to visit IYKYK Select Store!](https://iykyk-ecommerce.vercel.app/)
