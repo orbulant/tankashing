@@ -203,7 +203,7 @@ const Quiz = () => {
                 background: "white",
               }}
             >
-              <Image src={`../../sparkclub.jpg`} />
+              <Image src={`../../sparkclub.JPG`} />
               <Text color="black">Huai as fuck???</Text>
             </Card>
           </Box>
@@ -245,7 +245,7 @@ const Quiz = () => {
                 background: "white",
               }}
             >
-              <Image src={`../../genting20dec.png`} />
+              <Image src={`../../genting20dec.PNG`} />
               <Text color="black">Us at Half-Genting</Text>
             </Card>
           </Box>
@@ -378,7 +378,7 @@ const Quiz = () => {
                 background: "white",
               }}
             >
-              <Image src={`../../sucktoes.jpg`} />
+              <Image src={`../../sucktoes.JPG`} />
               <Text color="black">some prince sucking a princess's toes</Text>
             </Card>
           </Box>
