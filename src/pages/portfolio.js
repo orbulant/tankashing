@@ -22,6 +22,7 @@ const portfolio = ({ data }) => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
+              textAlign: "center",
             }}
           >
             <div dangerouslySetInnerHTML={{ __html: portfolioContent }} />
