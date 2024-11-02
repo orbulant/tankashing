@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets';
+
+// Define an array of image objects
+const images = [
+  {
+    src: '/src/images/IMG_3412.jpeg',
+    description: 'I am so proud of you, the person you were, the person you are now, and the person you will be. I love yous so much, Chanie!',
+    alt: "Chanie's 21st Birthday!!!",
+    width: 300,
+    height: 400,
+  },
+  {
+    src: '/src/images/IMG_3715.jpeg',
+    description: 'Thank you for this really first of its kind experience.',
+    alt: 'VR date',
+    width: 300,
+    height: 400,
+  },
+  {
+    src: '/src/images/IMG_4453.jpeg',
+    description: 'I really appreciate you for being so patient with me.',
+    alt: 'Trippy room',
+    width: 300,
+    height: 400,
+  },
+  // Add more images as needed
+];
+---
+
+<div class="images">
+  {
+    images.map((image) => (
+      <div class="container">
+        <h3>{image.alt}</h3>
+        <Image src={image.src} alt={image.alt} width={image.width} height={image.height} />
+        {image.description && <p>{image.description}</p>}
+      </div>
+    ))
+  }
+  <span>More images to come!!</span>
+</div>
+
+<style>
+  .images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 100px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+</style>

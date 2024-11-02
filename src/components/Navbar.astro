@@ -1,0 +1,52 @@
+---
+const currentPath = Astro.url.pathname;
+
+const home = '/';
+const details = 'details';
+const github = 'github';
+---
+
+<nav>
+  <span class="nav-title">ka-shing's awesome website!</span>
+  <div class="links">
+    <a class={currentPath === home ? 'active' : ''} href={home}>Home</a>
+    <a class={currentPath.includes(details) ? 'active' : ''} href={`/${details}`}>My Details</a>
+    <a class={currentPath.includes(github) ? 'active' : ''} href={`/${github}`}>GitHub</a>
+  </div>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-title {
+    font-weight: semibold;
+    font-size: 32px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+</style>

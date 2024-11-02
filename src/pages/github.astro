@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+
+import 'animate.css';
+---
+
+<Layout title="GitHub">
+  <main class="details">
+    <h1 class="animate__animated animate__slideInDown">My GitHub</h1>
+    <a href="https://github.com/orbulant" target="_blank">Click here to visit my GitHub profile!</a>
+    <div class="profile-cards">
+      <Image
+        src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=orbulant&theme=vision_friendly_dark"
+        alt="GitHub Profile Summary Card"
+        height={200}
+        width={400}
+        loading="eager"
+      />
+      <Image
+        src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=orbulant&theme=vision_friendly_dark"
+        alt="GitHub Profile Summary Card"
+        height={200}
+        width={400}
+        loading="eager"
+      />
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .details {
+    gap: 20px;
+  }
+
+  .profile-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+</style>
