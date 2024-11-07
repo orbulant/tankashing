@@ -9,9 +9,7 @@ import 'animate.css';
     <p>All my contact information, career history, open-source projects, tech-stacks used are in my LinkedIn profile, so please check it out!</p>
     <a href="https://www.linkedin.com/in/tankashing" target="_blank">Click here to visit my LinkedIn profile!</a>
     <div class="linkedin-container">
-      <div class="spinner" id="loading-spinner"></div>
       <div
-        id="linkedin-badge"
         class="badge-base LI-profile-badge"
         data-locale="en_US"
         data-size="large"
@@ -19,27 +17,13 @@ import 'animate.css';
         data-type="HORIZONTAL"
         data-vanity="tankashing"
         data-version="v1"
-        title="Tan Ka-Shing's LinkedIn Profile"
       >
       </div>
     </div>
   </main>
 </Layout>
 
-<script>
-  // Ensure the LinkedIn badge script is loaded and executed
-  document.addEventListener('DOMContentLoaded', function () {
-    const script = document.createElement('script');
-    script.src = 'https://platform.linkedin.com/badges/js/profile.js';
-    script.async = true;
-    script.defer = true;
-    script.onload = function () {
-      document.getElementById('loading-spinner').style.display = 'none';
-      document.getElementById('linkedin-badge').style.display = 'block';
-    };
-    document.body.appendChild(script);
-  });
-</script>
+<script is:inline src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 <style>
   .details {
@@ -54,26 +38,5 @@ import 'animate.css';
     width: 100%;
     height: 100%;
     margin-top: 20px;
-  }
-
-  .spinner {
-    border-top: 4px solid white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  @keyframes spin {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg);
-    }
   }
 </style>
