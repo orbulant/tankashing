@@ -13,6 +13,7 @@
     "animate.css": "^4.1.1",
     "astro": "^4.16.8",
     "canvas-confetti": "^1.9.3",
+    "sharp": "^0.33.5",
     "three": "^0.170.0"
   }
 }
